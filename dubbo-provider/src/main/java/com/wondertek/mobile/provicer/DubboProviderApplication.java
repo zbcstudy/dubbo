@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.hystrix.EnableHystrix;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * 1.导入依赖
@@ -17,6 +18,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
  *      3) 使用注解api的方式
  *      将每一个组件手动配置到容器中,让dubbo扫描各个配置
  */
+//@ImportResource("classpath:provider.xml")
 @EnableDubbo
 @EnableHystrix //提供服务容错
 @SpringBootApplication

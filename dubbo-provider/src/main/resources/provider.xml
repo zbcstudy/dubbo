@@ -19,7 +19,10 @@
 
 
     <!--4.暴露出去的服务 ref:指向服务的真正实现-->
-    <dubbo:service interface="com.wondertek.mobile.dubbo.core.service.UserService" ref="userServiceImpl"></dubbo:service>
+    <!--executes="10" 最多同时处理10个并发请求-->
+    <dubbo:service interface="com.wondertek.mobile.dubbo.core.service.UserService" ref="userServiceImpl"
+        executes="10"
+    ></dubbo:service>
 
 
     <bean id="userServiceImpl" class="com.wondertek.mobile.provicer.gmall.service.impl.UserServiceImpl"></bean>
