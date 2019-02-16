@@ -27,9 +27,9 @@ public class UserServiceImpl implements UserService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}*/
-		if (Math.random() > 0.5) {
-			throw new RuntimeException();
-		}
+//		if (Math.random() > 0.5) {
+//			throw new RuntimeException();
+//		}
 		return Arrays.asList(address1,address2);
 	}
 }
